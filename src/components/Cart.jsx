@@ -3,7 +3,10 @@ import React from 'react'
 const Cart = () => {
   return (
     <div>
-        <span>Cart item</span>
+        <span style={{fontSize:30}}>My Cart</span>
+        <br/>
+        <span style={{fontSize:30}}>Total: R.100</span>
+        <div className="productContainer">{}</div>
     </div>
   )
 }

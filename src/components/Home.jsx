@@ -66,16 +66,18 @@ const Home = () => {
         },
 
     ]
-
+    const [cart, setCart]=useState([]);
     const [products]=useState(productsArray)
+    console.log(cart);
 
 
   return (
+  
     <div className='productContainer'>
         {products.map((prod)=>(
            
             // <span>{prod.name}</span>
-            <SingleProduct prod={prod}/>
+            <SingleProduct prod={prod} cart={cart} setCart={setCart}/>
         ))}
 
     </div>
