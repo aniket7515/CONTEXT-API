@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import SingleProduct from './SingleProduct'
 import "./styles.css"
-const Home = () => {
+const Home = ({cart,setCart}) => {
     // const productsArray=[...Array(20)].map(()=>({
     //     id:faker.datatype.uuid(),
     //     name:faker.commerce.productName(),
@@ -66,7 +66,7 @@ const Home = () => {
         },
 
     ]
-    const [cart, setCart]=useState([]);
+
     const [products]=useState(productsArray)
     console.log(cart);
 
